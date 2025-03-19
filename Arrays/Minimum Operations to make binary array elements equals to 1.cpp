@@ -25,3 +25,14 @@ class Solution {
             return res;
         }   
     };
+
+
+/* 
+Algorith Explanation:
+1. We initialize an array `flipped` to track which elements have been flipped.
+2. `Current_flipped` keeps a count of how many flips affect the current element.
+3. We iterate through the array. If the current element is not `1`, we check if flipping it (and the next two elements) is possible.
+4. If flipping is possible, we update the flip count and `flipped` array to reflect the operation.
+5. If we can't flip due to the array size constraints, we return `-1`.
+6. Finally, we return the total number of flip operations required.
+*/
