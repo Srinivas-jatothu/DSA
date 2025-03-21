@@ -10,7 +10,7 @@ class Solution {
             int res=0;
     
             for(int i=0;i<n;i++){
-                if(i>=3 && flipped[i-3]==true){    //if the last 3 elements are flipped, we need to flip the current element back to its original state
+                if(i>=3 && flipped[i-3]==true){    ///if the last 3 elements are flipped, we need to flip the current element back to its original state
                     Current_flipped--;
                 }
                 if(Current_flipped%2 == nums[i]){   //if the current element is not equal to 1, we need to flip it
