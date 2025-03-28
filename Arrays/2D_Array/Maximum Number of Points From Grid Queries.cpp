@@ -18,8 +18,8 @@ class Solution {
     
             sort(begin(sortedQ), end(sortedQ));
     
-            priority_queue<vector<int>, vector<vector<int>>, greater<>> pq;
-            vector<vector<bool>> visited(m, vector<bool>(n, false));
+            priority_queue<vector<int>, vector<vector<int>>, greater<>> pq;  // min-heap which store {value, i, j}
+            vector<vector<bool>> visited(m, vector<bool>(n, false));  //this is to check if the cell is visited or not
             int points = 0;
             pq.push({grid[0][0], 0, 0});
             visited[0][0] = true;
