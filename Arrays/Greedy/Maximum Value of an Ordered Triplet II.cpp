@@ -21,7 +21,30 @@ class Solution {
         }
     };
 
+    /*
+        Algorithm explanation:
+        1. The function `maximumTripletValue` is designed to find the maximum value of an ordered triplet `(i, j, k)` in the array `nums` such that:
+        - `i < j < k`
+        - The value is calculated as `(nums[i] - nums[j]) * nums[k]`.
 
+        2. To optimize the solution:
+        - Two auxiliary arrays, `leftMax` and `rightMax`, are used to store the maximum values to the left and right of each index `j` respectively.
 
+        3. Steps:
+        a. **Precompute leftMax**:
+            - `leftMax[i]` stores the maximum value of `nums` from index `0` to `i-1`.
+            - This is done using a single pass from left to right.
 
-    
+        b. **Precompute rightMax**:
+            - `rightMax[i]` stores the maximum value of `nums` from index `i+1` to `n-1`.
+            - This is done using a single pass from right to left.
+
+        c. **Iterate through the array**:
+            - For each index `j` (where `1 <= j <= n-2`), calculate the value of `(leftMax[j] - nums[j]) * rightMax[j]`.
+            - Update the result with the maximum value encountered.
+
+        4. **Return the result**:
+        - The final result is the maximum value of the triplet `(i, j, k)` that satisfies the conditions.
+    */
+
+            
