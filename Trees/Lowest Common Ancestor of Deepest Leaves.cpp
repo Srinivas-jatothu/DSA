@@ -1,9 +1,6 @@
 
 // LeetCode problem : https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/description/?envType=daily-question&envId=2025-04-04
 
-
-
-
 class Solution {
     public:
         pair<int, TreeNode*> solve(TreeNode* root) {
