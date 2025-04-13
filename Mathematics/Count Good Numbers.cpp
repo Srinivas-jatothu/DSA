@@ -23,6 +23,7 @@ class Solution {
 
 
     /*
+    
     Algorithm explanation:
     1. The function `findPower` calculates the power of a number `a` raised to `b` using recursion and modular arithmetic.
     2. The base case is when `b` is 0, in which case it returns 1.
