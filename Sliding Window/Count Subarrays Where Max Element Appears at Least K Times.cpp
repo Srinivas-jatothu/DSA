@@ -14,6 +14,8 @@ class Solution {
                     countMax++;
                 }            
                 while(countMax >= k) {
+                    // If we have at least k occurrences of maxE, count all subarrays ending at j
+                    // The number of such subarrays is (n - j) because we can extend the subarray to the end of the array
                     result += n-j;                
                     if(nums[i] == maxE) {
                         countMax--;
