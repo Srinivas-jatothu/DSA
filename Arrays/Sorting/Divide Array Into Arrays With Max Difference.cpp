@@ -25,5 +25,4 @@ Algorithm Explanation:
 3. **Result Construction**: If the difference is within the allowed limit, add the group of three elements to the result vector `res`. If at any point the difference exceeds `k`, return an empty vector as it is not possible to divide the array into valid groups.
 4. **Return Result**: Finally, return the result vector containing the valid groups of three elements.
 Time Complexity: O(n log n) due to the sorting step, where n is the size of the input array `nums`. The grouping step is O(n) as we iterate through the array in steps of three.
-
 */
